@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vanhuan.appnews"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vanhuan.appnews.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.PaperActivity"
+            android:label="Paper Activity" >
+        </activity>
+        <activity android:name="com.vanhuan.appnews.CategoryActivity" >
+            <intent-filter>
+                <action android:name="com.vanhuan.appnews.CATEGORY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vanhuan.appnews.NewsListActivity" />
+        <activity android:name="com.vanhuan.appnews.NewsActivity" />
+        <activity
+            android:name="com.vanhuan.appnews.HomeFragment"
+            android:label="@string/title_activity_home_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.MoviesFragment"
+            android:label="@string/title_activity_movies_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.CategoryFragment"
+            android:label="@string/title_activity_pages_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.FragmentTab1"
+            android:label="@string/title_activity_fragment_tab1" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.CateActivity"
+            android:label="@string/title_activity_cate" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.ListNewFragment"
+            android:label="@string/title_activity_game_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.PublishFragment"
+            android:label="@string/title_activity_publish_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.NewsFragment"
+            android:label="@string/title_activity_news_fragment" >
+        </activity>
+        <activity
+            android:name="com.vanhuan.appnews.ArticleActivity"
+            android:label="@string/title_activity_article" >
+        </activity>
+    </application>
+
+</manifest>
